@@ -1,0 +1,21 @@
+.index-body {
+    background-color: rgb(199, 252, 247);
+    margin: 20px;
+}
+img{
+    border: 3px solid black; 
+    box-shadow: 5px 5px 5px gray;
+}
+h1, h2{
+    font-family: Helvetica, sans-serif;
+}
+.header{
+    background-color: white;
+}
+.schools-body{
+    background-image: linear-gradient(rgb(154, 212, 231), white);
+    background-repeat: no-repeat;
+}
+table{
+    text-align: center;
+}
