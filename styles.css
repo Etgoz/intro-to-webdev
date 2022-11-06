@@ -1,6 +1,5 @@
 .index-body {
     background-color: rgb(199, 252, 247);
-    margin: 20px;
 }
 img{
     border: 3px solid black; 
@@ -10,7 +9,20 @@ h1, h2{
     font-family: Helvetica, sans-serif;
 }
 .header{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.623);
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    margin: 15px;
+}
+article{
+    padding: 20px;
+}
+p{
+    background-color: rgba(255, 255, 255, 0.603);
 }
 .schools-body{
     background-image: linear-gradient(rgb(154, 212, 231), white);
