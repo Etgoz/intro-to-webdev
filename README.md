@@ -1,1 +1,0 @@
-# gruni-1st-exersize
