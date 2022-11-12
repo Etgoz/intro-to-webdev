@@ -28,11 +28,11 @@
                     <h2>Hello!</h2><br/>
                     <h3>Welcome to my website</h3><br/>
                     <p>My name is Etay Gozlan. I'm a student in the WebDev bootcamp</p><br/>
-                    <p>These ar my three favorite emojis:</p><br/>
+                    <p>These are my three favorite emojis:</p><br/>
                     <h1>👌 😘 🤩</h1>
                 </section>
                 <section id="favorite-book">
-                    <h2>Favorite book: <a href='https://www.amazon.com/Man-Called-Ove-Novel/dp/1476738025' target="_blank">A Man Called Ove</a></h2>
+                    <h2>Favorite book: A Man Called Ove</h2>
                     <img src='https://m.media-amazon.com/images/I/411hVDS5mWL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg' alt="A man called ove book cover image"/>
                     <p>
                         <b>Abstract:</b> <br />
@@ -57,15 +57,31 @@
                             Time to say things to them. And then something happens and then we stand there holding on to words like 'if'.
                         </q>
                     </p>
+                    <a href='https://www.amazon.com/Man-Called-Ove-Novel/dp/1476738025' target="_blank">Get A man Called Ove on Amazon</a>
                   
                 </section>
                 <section id="loved-place">
-                    <h2>A place I enjoyed visiting - Isla Holbox, Quintana Roo, Mexico</h2>
-                    <p>
-                        Holbox is a small island in the north-east end of mexico. The island is accessed by ferry from the mainland town of Chiquilá, 
-                        and has virtually no cars, with transport by most residents and tourists by golf cart or moped. 
-                        Holbox is very quiet and relaxed place and it has beautiful beaches and wilderness.
-                    </p>
+                    <div class="place-text">
+                        <h2>A place I enjoyed visiting -<br/> Isla Holbox, Quintana Roo, Mexico</h2>
+                        <p>
+                            Holbox is a small island in the north-east end of mexico. The island is accessed by ferry from the mainland town of Chiquilá, 
+                            and has virtually no cars, with transport by most residents and tourists by golf cart or moped. 
+                            Holbox is very quiet and relaxed place and it has beautiful beaches and wilderness.
+                        </p>
+                        <a href="https://goo.gl/maps/uB2orxHyn7SJjeLx5" target="_blank">Open Isla Holbox on Google Maps</a>
+                    </div>
+                    <div class="place-img">
+                        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_700,q_75,w_1200/v1/clients/quintanaroo/baja_1_43e0a111-3b41-42bc-bc4b-81423ed6c5e0.jpg" alt="isla holbox view">
+                        <img src="https://www.thewholeworldisaplayground.com/wp-content/uploads/2021/12/Things-to-do-in-Holbox-25.jpg" alt="isla holbox letters">
+                        <img src="https://www.yucatancruises.com/uploads/1/1/5/8/115854355/holbox-street-111_orig.jpg" alt="isla holbox road">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvSsBMZOUplmNgpJBlh_eUEEfmbzL5HqOIQ&usqp=CAU" alt="isla holbox swing">
+                    </div>
+                    <!-- <div class="hover-view">
+                        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_700,q_75,w_1200/v1/clients/quintanaroo/baja_1_43e0a111-3b41-42bc-bc4b-81423ed6c5e0.jpg" alt="isla holbox view">
+                        <img src="https://www.thewholeworldisaplayground.com/wp-content/uploads/2021/12/Things-to-do-in-Holbox-25.jpg" alt="isla holbox letters">
+                        <img src="https://www.yucatancruises.com/uploads/1/1/5/8/115854355/holbox-street-111_orig.jpg" alt="isla holbox road">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvSsBMZOUplmNgpJBlh_eUEEfmbzL5HqOIQ&usqp=CAU" alt="isla holbox swing">
+                    </div> -->
                 </section>
                 <section id="feedback-form">
                     <div id="form-head">
@@ -73,35 +89,49 @@
                         <h2>I'd love to hear your honest thoughts!</h2>
                     </div>
                     <form>
-                        <div>
+                        <div class="form-input">
                             <H3>Personal Details</H3><br/>
                             <label>
-                                Full name: <input type="text" name="name" />
+                                *Full name: <input type="text" name="name" required/>
                             <label>
                             <label>
                                 Phone number: <input type="tel" name="phone" />
                             </label>
+                            <br/>
                             <label>
-                                Email: <input type="email" name="email" />
+                                *Email: <input type="email" name="email" required/>
                             </label>
                             <label>
                                 Date of birth: <input type="date" value="2000-01-01" name="birth-date" max="2050-12-31" min="1900-01-01" />
                             </label>
                         </div>
-                        <div>
-                            <H3>Your Feedback</H3>
+                        <div class="form-input">
+                            <H3>Your Feedback</H3><br/>
+                            <div>
+                                <label class="rating">
+                                    Rating: 
+                                    <input type="radio" id="ratingChoice1" name="rating" value="1"/>
+                                    <label for="ratingChoice1">1</label>
+                                    <input type="radio" id="ratingChoice2" name="rating" value="2"/>
+                                    <label for="ratingChoice2">2</label>
+                                    <input type="radio" id="ratingChoice3" name="rating" value="3"/>
+                                    <label for="ratingChoice3">3</label>
+                                    <input type="radio" id="ratingChoice4" name="rating" value="4"/>
+                                    <label for="ratingChoice4">4</label>
+                                    <input type="radio" id="ratingChoice5" name="rating" value="5" checked/>
+                                    <label for="ratingChoice5">5</label>
+                                </label>
+                            </div>
                             <label>
-                                Rating: <input type="radio" name="rating" required/>
+                                *How did you find this website: <input type="select" name="how-found" required/>
                             </label>
-                            <label>
-                                How did you find this website: <input type="select" name="how-found" required/>
-                            </label>
+                            <br/>
                             <label>
                                 Your massage: <input type="textarea" name="message" />
                             </label>
                         </div id="buttons">
-                            <button id="submit-button" type="submit">Submit</button>
-                            <button id="reset-button" type="reset">Reset</button>
+                            <button class="form-button" type="submit">Submit</button>
+                            <button class="form-button" type="reset">Reset</button>
                         <div>
                     </form>
                 </section>
