@@ -104,11 +104,22 @@ body.dark .header a, .content{
         overflow: scroll;
         border: 3px solid var(--primary-dark-var);
         flex-basis: 40%;
-        height: 90%;
+        height: 90%; 
+    }
+
+    .place-img::-webkit-scrollbar{
+        width: 0.6em;
+    }
+
+    .place-img::-webkit-scrollbar-thumb{
+        background-color: darkgrey;
+        outline: 1px solid slategray;
+        border-radius: 10px;
     }
 
     #loved-place img{
         max-height: 40%;
+        max-width: 100%;
         min-width: 100%;
         border: 3px solid white;
         display: block;
@@ -290,6 +301,16 @@ body.dark .header a, .content{
     textarea{
         width: 100%
     }
+}
+
+.content::-webkit-scrollbar{
+    width: 0.9em;
+}
+
+.content::-webkit-scrollbar-thumb{
+    background-color: darkgrey;
+    outline: 1px solid slategray;
+    border-radius: 10px;
 }
 
 .header, .sidebar, .content, .footer{
