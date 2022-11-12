@@ -117,15 +117,14 @@ body.dark .header a, .content{
         border-radius: 10px;
     }
 
-    #loved-place img{
+    #loved-place .place-img img{
         max-height: 40%;
         max-width: 100%;
         min-width: 100%;
         border: 3px solid white;
-        display: block;
+        /* display: block; */
     }
     
-
     #feedback-form{
         display: flex;
         flex-direction: column;
@@ -439,6 +438,42 @@ body.dark .header a, .content{
     text-decoration: none;
     color:rgb(37, 37, 37);
     padding: 1em;
+}
+
+.hidden-container{
+    display: grid;
+    grid-template-columns: auto;
+    position: absolute;
+    z-index: 2;
+    top: 18vh;
+    left: 27vw;
+    height: 50vh;
+    width: 40vw;
+}
+
+#loved-place .hidden{
+    grid-row: 1;
+    grid-column: 1;
+    max-height: 100%;
+    min-height: 70%;
+    max-width: 100%;
+    display: none;
+}
+
+#loved-place img[alt="isla holbox view"]:hover ~ .hidden-container>.hidden[alt="isla holbox view"]{
+    display: block;
+}
+
+#loved-place img[alt="isla holbox letters"]:hover ~ .hidden-container>.hidden[alt="isla holbox letters"]{
+    display: block;
+}
+
+#loved-place img[alt="isla holbox road"]:hover ~ .hidden-container>.hidden[alt="isla holbox road"]{
+    display: block;
+}
+
+#loved-place img[alt="isla holbox swing"]:hover ~ .hidden-container>.hidden[alt="isla holbox swing"]{
+    display: block;
 }
 
 .form-button{
