@@ -84,20 +84,19 @@
                     </div> -->
                 </section>
                 <section id="feedback-form">
-                    <div id="form-head">
+                    <div class="form-head">
                         <h1>Feedback Form</h1>
-                        <h2>I'd love to hear your honest thoughts!</h2>
+                        <h3>I'd love to hear your honest thoughts!</h3>
                     </div>
-                    <form>
-                        <div class="form-input">
+                    <form method="get">
+                        <div class="form-input personal-details">
                             <H3>Personal Details</H3><br/>
                             <label>
-                                *Full name: <input type="text" name="name" required/>
-                            <label>
+                                *Full name: <input type="text" name="name" pattern="[a-zA-Z]+" required/>
+                            </label>
                             <label>
                                 Phone number: <input type="tel" name="phone" />
                             </label>
-                            <br/>
                             <label>
                                 *Email: <input type="email" name="email" required/>
                             </label>
@@ -105,34 +104,39 @@
                                 Date of birth: <input type="date" value="2000-01-01" name="birth-date" max="2050-12-31" min="1900-01-01" />
                             </label>
                         </div>
-                        <div class="form-input">
+                        <div class="form-input feedback">
                             <H3>Your Feedback</H3><br/>
-                            <div>
-                                <label class="rating">
-                                    Rating: 
-                                    <input type="radio" id="ratingChoice1" name="rating" value="1"/>
-                                    <label for="ratingChoice1">1</label>
-                                    <input type="radio" id="ratingChoice2" name="rating" value="2"/>
-                                    <label for="ratingChoice2">2</label>
-                                    <input type="radio" id="ratingChoice3" name="rating" value="3"/>
-                                    <label for="ratingChoice3">3</label>
-                                    <input type="radio" id="ratingChoice4" name="rating" value="4"/>
-                                    <label for="ratingChoice4">4</label>
-                                    <input type="radio" id="ratingChoice5" name="rating" value="5" checked/>
-                                    <label for="ratingChoice5">5</label>
+                            <label class="rating">
+                                Rating: 
+                                <input type="radio" id="ratingChoice1" name="rating" value="1"/>
+                                <label for="ratingChoice1">1</label>
+                                <input type="radio" id="ratingChoice2" name="rating" value="2"/>
+                                <label for="ratingChoice2">2</label>
+                                <input type="radio" id="ratingChoice3" name="rating" value="3"/>
+                                <label for="ratingChoice3">3</label>
+                                <input type="radio" id="ratingChoice4" name="rating" value="4"/>
+                                <label for="ratingChoice4">4</label>
+                                <input type="radio" id="ratingChoice5" name="rating" value="5" checked/>
+                                <label for="ratingChoice5">5</label>
                                 </label>
-                            </div>
-                            <label>
-                                *How did you find this website: <input type="select" name="how-found" required/>
+                            <label class="how-found">*How did you find this website:
+                                <select name="how-found"  id="how-found-dropdown" required>
+                                    <option value="GitHub">GitHub</option>
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="WebDev">WebDev</option>
+                                    <option value="Google">Google</option>
+                                    <option value="Other">Other</option>
+                                </select>
                             </label>
-                            <br/>
-                            <label>
-                                Your massage: <input type="textarea" name="message" />
+                            <label class="user-message" for="message">
+                                Your message:
                             </label>
-                        </div id="buttons">
+                            <textarea name="message" rows="4" value="None" placeholder="Your message"></textarea>
+                        </div>
+                        <div id="buttons">
                             <button class="form-button" type="submit">Submit</button>
                             <button class="form-button" type="reset">Reset</button>
-                        <div>
+                        </div>
                     </form>
                 </section>
             </content>
