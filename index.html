@@ -1,77 +1,151 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Etay Gozlan</title>
-        <link rel="icon"  type="image/x-icon" href=".\my_favicon.png" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <link rel="icon"  type="image/x-icon" href="./piano_favicon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Etay Gozlan 2nd web app</title>
     </head>
-    <body class="index-body">
-        <header class="header">
-            <h1 class="main-title text-center"><a class="text-decoration-none" aria-current="page" href="index.html">Etay Gozlan</a></h1>
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                  <a class="nav-link" href="#favorite-book">My Favorite Book</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#loved-place">A Place I Enjoyed Visiting</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#favorite-food">My Favorite Food</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href=".\schools.html">Schools</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./404.html">404 page</a>
-                  </li>
-              </ul>
-        </header>
-        <article id="favorite-book">
-            <h2>Favorite book: <a href='https://www.amazon.com/Man-Called-Ove-Novel/dp/1476738025' target="_blank">A Man Called Ove</a></h2>
-            <img src='https://m.media-amazon.com/images/I/411hVDS5mWL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg' alt="A man called ove book cover image"/>
-            <p>
-                <b>Abstract:</b> <br />
-                Ove is a curmudgeon—the kind of man who points at people he dislikes 
-                as if they were burglars caught outside his bedroom window. He has staunch principles, 
-                strict routines, and a short fuse. People call him “the bitter neighbor from hell.” 
-                But must Ove be bitter just because he doesn’t walk around with a smile plastered to his face all the time?
-                <br />
-                Behind the cranky exterior there is a story and a sadness.
-                So when one November morning a chatty young couple with two chatty young daughters move in 
-                next door and accidentally flatten Ove’s mailbox, it is the lead-in to a comical and heartwarming 
-                tale of unkempt cats, unexpected friendship, and the ancient art of backing up a U-Haul. 
-                All of which will change one cranky old man and a local residents’ association to their very foundations.
-                <br/>
-                <br/>
-                I like the book because it is really well written. The characters are very relateable and the story is both funny 
-                and sad and very touching
-            </p>
-            <q>
-                We always think there's enough time to do things with other people. 
-                Time to say things to them. And then something happens and then we stand there holding on to words like 'if'.
-            </q>
-        </article>
-        <article id="loved-place">
-            <h2>A place I enjoyed visiting - Isla Holbox, Quintana Roo, Mexico</h2>
-            <p>
-                Holbox is a small island in the north-east end of mexico. The island is accessed by ferry from the mainland town of Chiquilá, 
-                and has virtually no cars, with transport by most residents and tourists by golf cart or moped. 
-                Holbox is very quiet and relaxed place and it has beautiful beaches and wilderness.
-            </p>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Holbox-31.jpg/1920px-Holbox-31.jpg' height="300" alt='Holbox beaches'/>
-            <a href="https://goo.gl/maps/hRnfXym6WEkQ6q7H6" target="_blank">Holbox in google maps</a>
-        </article>
-        <article id="favorite-food">
-            <h2>My Favorite Food</h2>
-            <ol>
-                <li>Sushi</li>
-                <li>Bau</li>
-                <li>Pizza</li>
-                <li>Hamburger</li>
-                <li>Pasta</li>
-            </ol>
-        </article>
+    <body class="">
+         <div class="container">
+            <header class="header">
+                <span><a href="#home"><h1>🎹 Etay Gozlan</h1></a></span>
+                <span><img id="user-icon" src="./person-circle.svg" alt="person-circle"></span>
+            </header>
+            <nav class="sidebar">
+                <ul class="navigation">
+                    <li>navigation</li>
+                    <li><a href="#favorite-book">My favorite Book</a></li>
+                    <li><a href="#loved-place">A Place I Enjoyed</a></li>
+                    <li><a href="#feedback-form">Feedback Form</a></li>
+                    <li><a href="./schools.html" target="_blank">My Schools</a></li>
+                    <li><a href="https://github.com/Etgoz/intro-to-webdev" target="_blank">This Project on GitHab</a></li>
+                </ul>
+            </nav>
+            <content class="content">
+                <section id="home">
+                    <h2>Hello!</h2><br/>
+                    <h3>Welcome to my website</h3><br/>
+                    <p>My name is Etay Gozlan. I'm a student in the WebDev bootcamp</p><br/>
+                    <p>These are my three favorite emojis:</p><br/>
+                    <h1>👌 😘 🤩</h1>
+                </section>
+                <section id="favorite-book">
+                    <h2>Favorite book: A Man Called Ove</h2>
+                    <img src='https://m.media-amazon.com/images/I/411hVDS5mWL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg' alt="A man called ove book cover image"/>
+                    <p>
+                        <b>Abstract:</b> <br />
+                        Ove is a curmudgeon—the kind of man who points at people he dislikes 
+                        as if they were burglars caught outside his bedroom window. He has staunch principles, 
+                        strict routines, and a short fuse. People call him “the bitter neighbor from hell.” 
+                        But must Ove be bitter just because he doesn’t walk around with a smile plastered to his face all the time?
+                        <br />
+                        Behind the cranky exterior there is a story and a sadness.
+                        So when one November morning a chatty young couple with two chatty young daughters move in 
+                        next door and accidentally flatten Ove’s mailbox, it is the lead-in to a comical and heartwarming 
+                        tale of unkempt cats, unexpected friendship, and the ancient art of backing up a U-Haul. 
+                        All of which will change one cranky old man and a local residents’ association to their very foundations.
+                        <br/>
+                        <br/>
+                        I like the book because it is really well written. The characters are very relateable and the story is both funny 
+                        and sad and very touching
+                        <br/>
+                        <br/>
+                        <q>
+                            We always think there's enough time to do things with other people. 
+                            Time to say things to them. And then something happens and then we stand there holding on to words like 'if'.
+                        </q>
+                    </p>
+                    <a href='https://www.amazon.com/Man-Called-Ove-Novel/dp/1476738025' target="_blank">Get A man Called Ove on Amazon</a>
+                  
+                </section>
+                <section id="loved-place">
+                    <div class="place-text">
+                        <h2>A place I enjoyed visiting -<br/> Isla Holbox, Quintana Roo, Mexico</h2>
+                        <p>
+                            Holbox is a small island in the north-east end of mexico. The island is accessed by ferry from the mainland town of Chiquilá, 
+                            and has virtually no cars, with transport by most residents and tourists by golf cart or moped. 
+                            Holbox is very quiet and relaxed place and it has beautiful beaches and wilderness.
+                        </p>
+                        <a href="https://goo.gl/maps/uB2orxHyn7SJjeLx5" target="_blank">Open Isla Holbox on Google Maps</a>
+                    </div>
+                    <div class="place-img">
+                        <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_700,q_75,w_1200/v1/clients/quintanaroo/baja_1_43e0a111-3b41-42bc-bc4b-81423ed6c5e0.jpg" alt="isla holbox view">
+                        <img src="https://www.thewholeworldisaplayground.com/wp-content/uploads/2021/12/Things-to-do-in-Holbox-25.jpg" alt="isla holbox letters">
+                        <img src="https://www.yucatancruises.com/uploads/1/1/5/8/115854355/holbox-street-111_orig.jpg" alt="isla holbox road">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvSsBMZOUplmNgpJBlh_eUEEfmbzL5HqOIQ&usqp=CAU" alt="isla holbox swing">
+                        <div class="hidden-container">
+                            <!-- hidden photos -->
+                            <img class="hidden" src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_700,q_75,w_1200/v1/clients/quintanaroo/baja_1_43e0a111-3b41-42bc-bc4b-81423ed6c5e0.jpg" alt="isla holbox view">
+                            <img class="hidden" src="https://www.thewholeworldisaplayground.com/wp-content/uploads/2021/12/Things-to-do-in-Holbox-25.jpg" alt="isla holbox letters">
+                            <img class="hidden" src="https://www.yucatancruises.com/uploads/1/1/5/8/115854355/holbox-street-111_orig.jpg" alt="isla holbox road">
+                            <img class="hidden" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvSsBMZOUplmNgpJBlh_eUEEfmbzL5HqOIQ&usqp=CAU" alt="isla holbox swing">    
+                        </div>
+                    </div>
+                    
+                </section>          
+                <section id="feedback-form">
+                    <div class="form-head">
+                        <h1>Feedback Form</h1>
+                        <h3>I'd love to hear your honest thoughts!</h3>
+                    </div>
+                    <form method="get">
+                        <div class="form-input personal-details">
+                            <H3>Personal Details</H3><br/>
+                            <label>
+                                *Full name: <input type="text" name="name" pattern="[a-zA-Z]+" required/>
+                            </label>
+                            <label>
+                                Phone number: <input type="tel" name="phone" />
+                            </label>
+                            <label>
+                                *Email: <input type="email" name="email" required/>
+                            </label>
+                            <label>
+                                Date of birth: <input type="date" value="2000-01-01" name="birth-date" max="2050-12-31" min="1900-01-01" />
+                            </label>
+                        </div>
+                        <div class="form-input feedback">
+                            <H3>Your Feedback</H3><br/>
+                            <label class="rating">
+                                Rating: 
+                                <input type="radio" id="ratingChoice1" name="rating" value="1"/>
+                                <label for="ratingChoice1">1</label>
+                                <input type="radio" id="ratingChoice2" name="rating" value="2"/>
+                                <label for="ratingChoice2">2</label>
+                                <input type="radio" id="ratingChoice3" name="rating" value="3"/>
+                                <label for="ratingChoice3">3</label>
+                                <input type="radio" id="ratingChoice4" name="rating" value="4"/>
+                                <label for="ratingChoice4">4</label>
+                                <input type="radio" id="ratingChoice5" name="rating" value="5" checked/>
+                                <label for="ratingChoice5">5</label>
+                                </label>
+                            <label class="how-found">*How did you find this website:
+                                <select name="how-found"  id="how-found-dropdown" required>
+                                    <option value="GitHub">GitHub</option>
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="WebDev">WebDev</option>
+                                    <option value="Google">Google</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </label>
+                            <label class="user-message" for="message">
+                                Your message:
+                            </label>
+                            <textarea name="message" rows="4" value="None" placeholder="Your message"></textarea>
+                        </div>
+                        <div id="buttons">
+                            <button class="form-button" type="submit">Submit</button>
+                            <button class="form-button" type="reset">Reset</button>
+                        </div>
+                    </form>
+                </section>
+            </content>
+            <footer class="footer">
+                <div>Etay Gozlan</div>
+                <a href="mailto:etay.gozlan@grunitech.com?subject=Making contact" target="_blank">etay.gozlan@grunitech.com</a>
+            </footer>
+        </div>
     </body>
 </html>
